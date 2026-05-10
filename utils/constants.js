@@ -4,7 +4,7 @@ export const storageNames = {
   paymentMethods: 'PAYMENT_METHODS',
   sellerToken: 'SELLER_TOKEN',
   selectedIdPayment: 'SELECTED_ID_PAYMENT',
-  aiContentUser: 'AI_CONTENT_USER_TOKEN',
+  aiContentUser: 'AI_CONTENT_TOKEN',
 }
 
 export const headerName = (header) => {

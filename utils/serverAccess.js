@@ -9,7 +9,6 @@ export const requestData = (opt = {}) => {
     headers = null,
     type = 'builder',
   } = opt
-  console.log('process.env.API_AI_CONTENT', process.env.API_AI_CONTENT)
   return axios({
     method,
     url: `${

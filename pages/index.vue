@@ -41,7 +41,7 @@
 
     <v-row v-if="!loading" class="text-brown justify-center align-center">
       <v-col
-        v-if="!invoiceData || invoiceData?.status === 'CREATED'"
+        v-if="!invoiceData || ['CREATED', 'DONE'].includes(invoiceData?.status)"
         cols="12"
         sm="10"
         md="8"
@@ -179,6 +179,7 @@ export default {
       paymentState: null,
       selectedCustomerAddress: null,
       invoiceTotal: 0,
+      token: '',
       // installments
       installments: [],
       paymentStatus: {
@@ -241,7 +242,7 @@ export default {
       const headerUserType =
         this.initStore.user?.type === 'guest' ? 'GUEST' : 'CUSTOMER'
 
-      return `Bearer ${headerUserType}_${this.initStore.user?.token || ''}`
+      return `Bearer ${headerUserType}_${this.token || ''}`
     },
     initStore() {
       return this.$store.state.init
@@ -444,7 +445,7 @@ export default {
             Authorization:
               this.userType === 'customer'
                 ? this.requestHeader.replace('Bearer', this.initStore.hostName)
-                : `Bearer ${this.initStore.user.sellerToken}`,
+                : `Bearer ${this.token}`,
           },
         })
           .then((res) => {
@@ -567,7 +568,7 @@ export default {
             Authorization:
               this.userType === 'customer'
                 ? this.requestHeader
-                : `Bearer ${this.initStore.user?.sellerToken}`,
+                : `Bearer ${this.token}`,
           },
         })
           .then((response) => {
@@ -610,9 +611,7 @@ export default {
           Authorization:
             this.userType === 'customer'
               ? this.requestHeader
-              : this.userType === 'seller'
-              ? `Bearer ${this.initStore.user?.sellerToken}`
-              : `Bearer ${this.initStore.user?.aiContentUserToken}`,
+              : `Bearer ${this.token}`,
         },
       })
         .then((response) => {
@@ -883,8 +882,9 @@ export default {
             : {
                 aiContentUserToken: userStore.token,
               }
-      }
 
+        this.token = userStore.token
+      }
       this.$store.commit('init/setUser', userData)
     },
     priceWithCurrency(amount) {
