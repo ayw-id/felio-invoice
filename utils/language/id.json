@@ -1,0 +1,131 @@
+{
+  "general": {
+    "cancel": "Batal",
+    "save": "Simpan",
+    "search": "Cari",
+    "edit": "Ubah",
+    "delete": "Hapus",
+    "yes": "Ya",
+    "continue": "Lanjutkan",
+    "back": "Kembali"
+  },
+  "errors": {
+    "invoiceCodeNotFound": "Kode invoice tidak ada",
+    "password": "Minimal karakter untuk password adalah 6",
+    "passwordNotTheSame": "Kata sandi yang Anda masukkan tidak sama",
+    "requiredEmail": "E-mail tidak boleh kosong",
+    "invalidEmail": "E-mail tidak valid",
+    "requiredName": "Nama tidak boleh kosong",
+    "invalidName": "Format nama tidak valid. Kolom nama hanya boleh berisi alfabet dan spasi",
+    "requiredPhone": "Nomor Handphone tidak boleh kosong",
+    "invalidPhone": "Nomor handphone tidak valid. Kolom nomor handphone hanya boleh berisi angka",
+    "countryCodeNotAvailable": "Kode nomor handphone tidak tersedia",
+    "serverIssue": "Server sedang bermasalah",
+    "requiredField": "Kolom ini wajib di isi",
+    "invalidPostCode": "Kode post tidak valid",
+    "requiredSaveAs": "Kolom \"simpan sebagai\" tidak boleh kosong",
+    "requiredAddress": "Kolom \"alamat\" tidak boleh kosong",
+    "paymentMethodNotAvailable": "Metode pembayaran tidak tersedia",
+    "ewalletNotAvailable": "* tidak tersedia"
+  },
+  "forms": {
+    "fullName": "Nama Lengkap",
+    "passwordRequired": "Kata Sandi *",
+    "rePasswordRequired": "Tulis Ulang Kata Sandi *",
+    "phone": "Nomor Handphone",
+    "loginForm": {
+      "title": "Silahkan masukkan Email dan password untuk mengakses tagihan ini"
+    },
+    "registerForm": {
+      "title": "Silahkan registrasi terlebih dahulu untuk menyelesaikan transaksi Anda",
+      "submitButton": "Daftar"
+    }
+  },
+  "invoice": {
+    "code": "Kode Tagihan",
+    "expired": "Invoice telah kadaluarsa",
+    "payment": {
+      "pay": "Bayar Sekarang",
+      "types": {
+        "PENDING": {
+          "status": "Menunggu Pembayaran",
+          "date": "Bayar Sebelum"
+        },
+        "FAILED": {
+          "status": "Pembayaran Gagal",
+          "date": "Bayar Sebelum"
+        },
+        "EXPIRED": {
+          "status": "Pembayaran Kadaluarsa",
+          "date": "Tanggal Kadaluarsa"
+        },
+        "PAID": {
+          "status": "Pembayaran Sukses",
+          "date": "Tanggal Dibayar"
+        }
+      },
+      "amount": "Nominal Pembayaran",
+      "amountCopied": "Nominal berhasil disalin",
+      "accountNumber": "Nomor Akun Virtual",
+      "accountNumberCopied": "Nomor VA berhasil disalin ",
+      "fulfillmentOpenAt": "Pembayaran baru dapat dilakukan pada ",
+      "change": "Ubah Pembayaran",
+      "fulfillmentExpired": "Batas pelunasan telah berakhir"
+    },
+    "detailOrders": {
+      "title": "Detail Pemesanan",
+      "downPayment": "Uang Muka",
+      "fulfillment": "Pelunasan"
+    },
+    "address": {
+      "listTitle": "List Alamat",
+      "title": "Alamat Pengiriman",
+      "noAddress": "Anda belum memiliki alamat pengiriman",
+      "addNewAddress": "Tambah Alamat Pengiriman",
+      "useAddress": "Gunakan Alamat Ini",
+      "deleteAddress": "Hapus Alamat",
+      "deleteAddressConfirmation": "Anda yakin ingin menghapus alamat ini ?",
+      "form": {
+        "saveAs": "Simpan Sebagai",
+        "saveAsPlaceholder": "cth: Rumah, Apartemen, dll",
+        "receiver": "Nama Penerima",
+        "selectDistrictButton": "Cari Kecamatan, Kota, atau Profinsi",
+        "queryAddress": "Kecamatan, Kota, atau Profinsi",
+        "queryAddressPlaceHolder": "cth: Makassar, Jawa Barat, dll",
+        "address": "Alamat Lengkap",
+        "addressPlaceholder": "cth: Jl. Perintis Kemerdekaan no.18",
+        "postCode": "Kode Post",
+        "isPrimary": "Tetapkan Sebagai Alamat Utama"
+      }
+    },
+    "shipping": {
+      "estimate": "Sampai dalam * hari kerja",
+      "moreThanEstimate": "Sampai dalam lebih dari * hari kerja",
+      "estimateTitle": "Estimasi Pengiriman",
+      "serviceTitle": "Layanan Pengiriman"
+    },
+    "paymentMethods": {
+      "title": "Pembayaran",
+      "choosePayment": "Silahkan pilih metode pembayaran",
+      "choosePaymentButton": "Pilih Pembayaran",
+      "changePaymentButton": "Ubah Pembayaran",
+      "ovo": {
+        "title": "Bayar Pakai OVO",
+        "inputPhone": "Silahkan masukkan nomor handphone Anda yang terhubung dengan akun OVO Anda"
+      },
+      "alfamart": {
+        "title": "Bayar Pakai Alfamart",
+        "inputName": "Silahkan masukkan nama Anda",
+        "inputPhone": "Nomor Handphone"
+      }
+    },
+    "summary": {
+      "title": "Ringkasan Transaksi",
+      "productTotal": "Total Harga (* Barang)",
+      "shippingTotal": "Total Ongkos Kirim",
+      "serviceFee": "Biaya Layanan",
+      "vat": "VAT",
+      "grandTotal": "Grand Total"
+    }
+  }
+}

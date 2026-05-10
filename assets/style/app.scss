@@ -1,0 +1,45 @@
+// Import Vuetify styling
+
+@font-face {
+  font-family: 'Brown Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Brown-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Brown Light';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('~assets/fonts/Brown-Light.ttf') format('truetype');
+}
+
+.text-brown {
+  font-family: 'Brown Regular';
+}
+
+.text-brown-light {
+  font-family: 'Brown Light';
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 11px;
+}
+
+.text-lg {
+  font-size: 20px;
+}
+
+.text-xlg {
+  font-size: 28px;
+}
+
+.text-xxlg {
+  font-size: 32px;
+}

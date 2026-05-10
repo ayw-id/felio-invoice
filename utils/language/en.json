@@ -1,0 +1,131 @@
+{
+  "general": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "search": "Search",
+    "edit": "Edit",
+    "delete": "Delete",
+    "yes": "Yes",
+    "continue": "Continue",
+    "back": "Back"
+  },
+  "errors": {
+    "invoiceCodeNotFound": "Invoice code not found",
+    "password": "Minimum characters for password is 6",
+    "passwordNotTheSame": "The password you entered is not the same",
+    "requiredEmail": "E-mail is required",
+    "invalidEmail": "Invalid e-mail",
+    "requiredName": "Name is required",
+    "invalidName": "Invalid name format. Only alphabets and white spaces allowed",
+    "requiredPhone": "Phone number is required",
+    "invalidPhone": "Invalid phone number format. Only numbers allowed",
+    "countryCodeNotAvailable": "Phone country code not available",
+    "serverIssue": "Server is having a problem",
+    "requiredField": "This field is required",
+    "invalidPostCode": "Invalid postal code",
+    "requiredSaveAs": "\"Save as\" field is required",
+    "requiredAddress": "\"Address\" field is required",
+    "paymentMethodNotAvailable": "Payment method not available",
+    "ewalletNotAvailable": "* not available"
+  },
+  "forms": {
+    "fullName": "Full Name",
+    "passwordRequired": "Password *",
+    "rePasswordRequired": "Retype Password *",
+    "phone": "Phone Number",
+    "loginForm": {
+      "title": "Please input your Email and password to access this invoice"
+    },
+    "registerForm": {
+      "title": "Please register first to complete your transaction",
+      "submitButton": "Sign Up"
+    }
+  },
+  "invoice": {
+    "code": "Invoice Code",
+    "expired": "Invoice has been expired",
+    "payment": {
+      "pay": "Pay Now",
+      "types": {
+        "PENDING": {
+          "status": "Waiting For Payment",
+          "date": "Due Date"
+        },
+        "FAILED": {
+          "status": "Payment Failed",
+          "date": "Due Date"
+        },
+        "EXPIRED": {
+          "status": "Payment Expired",
+          "date": "Expired Date"
+        },
+        "PAID": {
+          "status": "Payment Success",
+          "date": "Payment Date"
+        }
+      },
+      "amount": "Total Payment",
+      "amountCopied": "Amount Copied",
+      "accountNumber": "Virtual Account Number",
+      "accountNumberCopied": "VA number copied ",
+      "fulfillmentOpenAt": "Payment can be made on ",
+      "change": "Change Payment Method",
+      "fulfillmentExpired": "Fulfillment expired"
+    },
+    "detailOrders": {
+      "title": "Detail Orders",
+      "downPayment": "Down Payment",
+      "fulfillment": "Fulfillment"
+    },
+    "address": {
+      "listTitle": "List Address",
+      "title": "Shipping Address",
+      "noAddress": "You don't have address yet",
+      "addNewAddress": "Add New Address",
+      "useAddress": "Use Address",
+      "deleteAddress": "Delete Address",
+      "deleteAddressConfirmation": "Are You sure You want to delete this address",
+      "form": {
+        "saveAs": "Save As",
+        "saveAsPlaceholder": "eg: Home, Apartment, etc",
+        "receiver": "Recipient's Name",
+        "selectDistrictButton": "Search District, City, or Province",
+        "queryAddress": "District, city, or province",
+        "queryAddressPlaceHolder": "eg: Makassar, Jawa Barat, etc",
+        "address": "Complete Address",
+        "addressPlaceholder": "eg: Jl. Perintis Kemerdekaan no.18",
+        "postCode": "Postal Code",
+        "isPrimary": "Set As Primary"
+      }
+    },
+    "shipping": {
+      "estimate": "Arrive within * working days",
+      "moreThanEstimate": "Arrived in more than * working days",
+      "estimateTitle": "Estimated Delivery",
+      "serviceTitle": "Delivery Service"
+    },
+    "paymentMethods": {
+      "title": "Payment",
+      "choosePayment": "Please choose payment method",
+      "choosePaymentButton": "Choose Payment",
+      "changePaymentButton": "Change Payment",
+      "ovo": {
+        "title": "OVO Payment",
+        "inputPhone": "Please enter your mobile phone number that is connected to your OVO account"
+      },
+      "alfamart": {
+        "title": "Alfamart Payment",
+        "inputName": "Please enter your name",
+        "inputPhone": "Input Phone"
+      }
+    },
+    "summary": {
+      "title": "Transaction Summary",
+      "productTotal": "Total Price (* Products)",
+      "shippingTotal": "Total Shipping",
+      "serviceFee": "Service Fee",
+      "vat": "VAT",
+      "grandTotal": "Grand Total"
+    }
+  }
+}

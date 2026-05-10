@@ -1,0 +1,52 @@
+{
+  "name": "Invoice",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cp .env.dev .env && clear && nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate:dev": "cp .env.dev .env && yarn lintfix && nuxt generate && yarn deploy && yarn push:dev",
+    "generate:live": "cp .env.live .env && yarn lintfix && nuxt generate && yarn deploy && yarn push:live",
+    "deploy": "yarn cleanDestination && yarn copyDist",
+    "cleanDestination": "rm -R ../felio-deploy/invoice/*",
+    "copyDist": "cp -R ./dist/* ../felio-deploy/invoice/",
+    "push:dev": "cd ../felio-deploy && git add . && git commit -m \"deploy invoice\" && git push origin staging",
+    "push:live": "cd ../felio-deploy && git add . && git commit -m \"deploy invoice\" && git push origin main",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:js && yarn lint:prettier",
+    "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/i18n": "^7.3.1",
+    "@nuxtjs/pwa": "^3.3.5",
+    "core-js": "^3.19.3",
+    "libphonenumber-js": "^1.11.2",
+    "moment": "^2.29.4",
+    "nuxt": "^2.15.8",
+    "nuxt-user-agent": "^1.2.2",
+    "qrcode": "^1.5.4",
+    "qs": "^6.11.1",
+    "vue": "^2.6.14",
+    "vue-advanced-chat": "^1.5.5",
+    "vue-server-renderer": "^2.6.14",
+    "vue-social-sharing": "^3.0.9",
+    "vue-tel-input-vuetify": "^1.5.3",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify": "^2.6.10",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@nuxtjs/eslint-config": "^11.0.0",
+    "@nuxtjs/eslint-module": "^3.1.0",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.5.1",
+    "prettier": "^2.7.1"
+  }
+}
